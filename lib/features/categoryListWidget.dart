@@ -6,7 +6,7 @@ class Categorylistwidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return     Padding(
+    return Padding(
       padding: const EdgeInsets.all(18.0),
       child: Container(
         height: 480,
@@ -23,16 +23,12 @@ class Categorylistwidget extends StatelessWidget {
                       Expanded(
                         child: Row(
                           children: [
-                            Expanded(
-                              flex: 3,
-                              child: Container(color: Colors.blue,),
-                            ),
+                            Expanded(flex: 3, child: Container(color: Colors.blue)),
                             SizedBox(width: 12,),
                             Expanded(
                               flex: 2,
                               child: Column(
-                                mainAxisSize:
-                                MainAxisSize.min,
+                                mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Expanded(child: Container(color: Colors.green,)),
                                   SizedBox(height: 12,),

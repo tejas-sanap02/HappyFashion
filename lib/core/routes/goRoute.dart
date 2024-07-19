@@ -1,20 +1,27 @@
-import 'package:ecommerce/features/home.dart';
+import 'package:ecommerce/features/CategoryFilterScreen/CategoryFIlterScreen.dart';
+import 'package:ecommerce/features/home/home.dart';
 import 'package:ecommerce/features/productDetails/productDetailsScreen.dart';
-import 'package:go_router/go_router.dart';
+import 'package:go_router/go_router.dart' ;
 
 // GoRouter configuration
 final router = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(
-      name: 'home', // Optional, add name to your routes. Allows you navigate by name instead of path
+      name: 'home',
       path: '/',
-      builder: (context, state) => HomePage(),
+    //  builder: (context, state) => CategoryFilterScreen(),//HomePage(),
+      builder: (context, state) => const HomePage(),
     ),
     GoRoute(
       name: 'productDetailScreen',
       path: '/productDetailScreen',
-      builder: (context, state) => ProductDetailScreen(),
+      builder: (context, state) => const ProductDetailScreen(),
+    ),
+    GoRoute(
+      name: 'categoryFilterScreen',
+      path: '/categoryFilterScreen',
+      builder: (context, state) => const CategoryFilterScreen(),
     ),
   ],
 );
