@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                           SizedBox(width: 18,),
                           InkWell(
                             onTap: () {carouselController.previousPage(duration: Duration(milliseconds: 700));},
-                            child: Icon(Icons.arrow_circle_left_outlined, size: 3.h,),),
+                            child: Icon(Icons.arrow_circle_left_outlined, size: 4.h,),),
                           Expanded(
                             child: CarouselSlider(
                               carouselController: carouselController,
@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage> {
                           // ),
                           InkWell(
                             onTap: () {carouselController.nextPage(duration: Duration(milliseconds: 700));},
-                            child: Icon(Icons.arrow_circle_right_outlined, size: 3.h,),
+                            child: Icon(Icons.arrow_circle_right_outlined, size: 4.h,),
                           ),
                           SizedBox(width: 18,),
                         ],
